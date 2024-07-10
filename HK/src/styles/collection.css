@@ -1,0 +1,28 @@
+.cmain {
+    display: flex;
+    justify-content: space-evenly;  /* Space out the items evenly */
+    margin-bottom: 20px;
+}
+
+.collection {
+    width: 48%;  /* Adjust width to ensure two items fit in one row with some spacing */
+    cursor: pointer;
+}
+
+.collectionImage {
+    width: 100%;  /* Make the image take the full width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover;  /* Ensure the image covers the entire area of its container */
+    margin: 10px;
+}
+
+.collection h3 {
+    display: flex;
+    justify-content: center;
+    color: rgb(141, 121, 7);
+    margin-top: 10px;  /* Add some space above the text */
+}
+
+.collection span{
+    margin-left: 4px;
+}

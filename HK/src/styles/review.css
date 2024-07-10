@@ -1,0 +1,36 @@
+/* .main-review{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+} */
+
+.name img{
+    height: 25px;
+    width: 25px;
+    margin-left: 80px;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+}
+
+.name p{
+    margin-left: 15px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.checked {
+    color: orange;
+}
+
+.rating{
+    margin-left: 120px;
+}
+
+.pr{
+    width: 700px;
+    margin-left: 120px;
+}

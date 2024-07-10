@@ -1,0 +1,192 @@
+.cart-header {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-header h2 {
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.sub-total {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    border-top: 1px solid black;
+}
+
+
+.cart-card {
+    display: flex;
+    /* background-color:#dedede; */
+    height: max-content;
+    margin-left: 80px;
+}
+
+#custom {
+    margin-left: 0;
+    font-size: 19px;
+    color: grey;
+}
+
+.cart-body {
+    display: flex;
+    margin: 25px;
+}
+
+.cart-body p {
+    font-size: 25px;
+    margin: 15px;
+    margin-bottom: 0;
+    padding-top: 28px;
+    margin-left: 200px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.cart-body h3 {
+    font-size: 35px;
+    font-weight: 300;
+    margin-right: 45px;
+    width: 200px;
+    margin-left: 50px;
+}
+
+#item-image{
+    height: 400px;
+    width: 350px;
+    margin: 30px;
+    margin-left: 10px;
+}
+
+.dropbtn3 {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid grey;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.arrow-icon2 {
+    height: 16px;  /* Ensure the height and width are set */
+    width: 16px;
+    transition: transform 0.5s ease;
+}
+
+.rotate3 {
+    transform: rotate(180deg);
+}
+
+.dropdown3 {
+    position: relative;
+    display: inline-block;
+    margin-top: 35px;
+}
+
+.dropdown-content3 {
+    display: none;
+    position: absolute;
+    background-color: white;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 100px;
+    font-size: 15px;
+}
+
+.dropdown-content3 a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown3 a:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.show {
+    display: block;
+}
+
+.delete-item{
+    margin-top: 190px;
+    margin-left: 50px;
+    height: 40px;
+    width: 150px;
+    font-size: 40px !important;
+    outline: none;
+    border: white;
+    color: red;
+    cursor: pointer;
+}
+
+.delete-item:hover{
+    color: rgb(197, 2, 2);
+}
+
+.proceed-buttons{
+    display: flex;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+.proceed-buttons button{
+    height: 60px;
+    width: 250px;
+    margin-right: 20px;
+    font-size: large;
+}
+
+.proceed-buttons h2 {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    text-align: end;
+    margin-left: 780px;
+}
+
+.cs{
+    margin-top: 10px;
+    color: #221361;
+}
+
+.ptc{
+    margin-top: 10px;
+    color: #FFA500;
+}
+
+#b1{
+    background-color: #221361;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#b2{
+    background-color: #FFA500;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#b1:hover{
+    background-color: #321c88;
+}
+
+#b2:hover{
+    background-color: #ffad14
+}

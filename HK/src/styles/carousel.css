@@ -1,0 +1,85 @@
+/* MyCarousel.css */
+.carousel-container {
+  position: relative;
+  width: 98vw; /* Full width of the viewport */
+  height: 600px; /* Set the height to 400px */
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  height: 100%; /* Ensure the inner container takes the full height */
+  transition: transform 1s ease-in-out;
+}
+
+.carousel-item {
+  width: 100%; /* Full width of the container */
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container */
+  object-fit: cover; /* Cover the container while maintaining aspect ratio */
+  display: block;
+  padding-bottom: 200px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: inherit;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1; /* Ensure buttons appear above indicators */
+  padding-bottom: 15px;
+  overflow: hidden;
+}
+
+
+.carousel-control-prev {
+  left: 10px;
+  font-size: 40px;
+  padding-right: 18px;
+}
+
+.carousel-control-next {
+  right: 10px;
+  font-size: 40px;
+  padding-left: 12px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.carousel-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.7s ease;
+}
+
+.carousel-indicator.active {
+  background-color: gray; /* Active indicator color */
+}

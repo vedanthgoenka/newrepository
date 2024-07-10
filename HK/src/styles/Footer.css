@@ -1,0 +1,31 @@
+.f{
+    background-color: #221361;
+    margin-top: 50px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items:start;
+}
+
+.Col{
+    color: white;
+    text-align: start;
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+
+.Col p{
+    cursor: pointer;
+}
+
+.i{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.i span{
+    margin-right: 4px;
+}
+

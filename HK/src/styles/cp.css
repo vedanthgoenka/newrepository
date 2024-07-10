@@ -1,0 +1,176 @@
+.x1 {
+  margin: 75px;
+  margin-top: 30px;
+}
+
+.cp1 {
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+}
+
+.cp1 h3 {
+  margin-right: 200px;
+  font-weight: normal;
+  max-width: 200px;
+}
+
+.scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-width: 375px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+
+
+.scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: #5834e7;
+  border-radius: 6px;
+  border: 3px solid #d7d7d7;
+}
+
+.cp1 p {
+  font-size: 20px;
+  margin-right: 790px;
+  margin-left: 45px;
+  font-style:oblique;
+}
+
+.filter {
+  margin-left: 70px;
+  overflow-y: auto;
+}
+
+.fHeading {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin-left: 70px;
+  /* background-color: #5834e7; */
+  border-bottom: 2px solid #ccc; /* This adds the underline */
+   /* Adjust to add spacing below the text and the line */
+}
+
+
+.ca:hover{
+  cursor: pointer;
+  color:#ccc;
+  transform: scale(1.05);
+}
+
+.fHeading p {
+  font-size: 18.5px;
+  /* font-weight: bold; */
+}
+
+.filter h3 {
+  font-size: 22px;
+  font-weight: normal;
+  /* font-weight: bold; */
+}
+
+.filter label {
+  font-size: 20px;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  width: fit-content;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  background-color: #e0dfdf;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: rgb(120, 120, 255);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 6px;
+  top: 3px;
+  width: 4px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.cp2 {
+  display: flex;
+  width: min-content;
+}
+
+.filterCount{
+  margin-top: 21px;
+  margin-right: 100px;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin-left: 60px;
+}
+
+@media (min-width: 768px) {
+  .items {
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  }
+}
+
+/* .item {
+  border: 1px solid #ccc;
+  padding: 16px;
+  text-align: center;
+} */
